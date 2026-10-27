@@ -1,0 +1,36 @@
+{
+  "podman": "/absolute/path/to/podman",
+  "connection": null,
+  "container": "your-desktop-container",
+  "environment": {},
+  "deployment": {
+    "guest_tools": "/absolute/host/controller/deployment/session-tools",
+    "mod": "/absolute/host/controller/deployment/claude-session-mod"
+  },
+  "container_binding": {
+    "id": "generated-from-podman-inspect",
+    "image": "generated-from-podman-inspect",
+    "user": "1000:1000",
+    "mounts": [
+      {"Type": "bind", "Source": "/vm/tools", "Destination": "/opt/kaizen/session-tools", "RW": false},
+      {"Type": "bind", "Source": "/vm/mod", "Destination": "/opt/kaizen/claude-session-mod", "RW": false}
+    ],
+    "privileged": false,
+    "security_opt": [],
+    "cap_drop": ["ALL"],
+    "memory": 17179869184,
+    "pids_limit": 2048
+  },
+  "deployment_bindings": {
+    "guest_tools": {
+      "host_path": "/absolute/host/controller/deployment/session-tools",
+      "vm_source": "/vm/tools",
+      "guest_destination": "/opt/kaizen/session-tools"
+    },
+    "mod": {
+      "host_path": "/absolute/host/controller/deployment/claude-session-mod",
+      "vm_source": "/vm/mod",
+      "guest_destination": "/opt/kaizen/claude-session-mod"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "kaizen-session",
+  "version": "0.3.0",
+  "description": "Attributed assistant messaging, session controls and context reports for the contained desktop.",
+  "license": "Apache-2.0"
+}

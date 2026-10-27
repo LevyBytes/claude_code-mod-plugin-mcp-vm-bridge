@@ -1,0 +1,12 @@
+{
+  "name": "claude-sidebar-bridge",
+  "publisher": "kaizen-local",
+  "displayName": "Kaizen Claude Sidebar Bridge",
+  "version": "0.1.0",
+  "description": "Routes the local pilot's Claude lifecycle controls to the sidebar.",
+  "license": "Apache-2.0",
+  "engines": { "vscode": "^1.94.0" },
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "extensionDependencies": ["anthropic.claude-code"]
+}

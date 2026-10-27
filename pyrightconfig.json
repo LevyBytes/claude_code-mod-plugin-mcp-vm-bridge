@@ -1,0 +1,6 @@
+{
+  "include": ["."],
+  "exclude": ["build", "dist"],
+  "pythonVersion": "3.12",
+  "typeCheckingMode": "basic"
+}

@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.vsix binary
+*.zip binary
+*.pyz binary
